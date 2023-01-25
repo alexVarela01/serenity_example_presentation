@@ -25,9 +25,4 @@ public class GoogleSteps {
         googleSearchElements.fill_search_input(value);
         googleSearchElements.click_search();
     }
-
-    @Step("^the user should see \"([^\"]*)\" as the search result$")
-    public void check_result(String value) {
-        googleSearchElements.check_result(value);
-    }
 }

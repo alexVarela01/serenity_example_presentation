@@ -1,7 +1,6 @@
 package org.example.scenarios;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Feature;
 import net.thucydides.core.annotations.Steps;
@@ -28,8 +27,4 @@ public class GoogleStepsDefinition {
         googleSteps.perform_search(value);
     }
 
-    @Then("^the user should see \"([^\"]*)\" as the search result$")
-    public void check_result(String value) {
-        googleSteps.check_result(value);
-    }
 }

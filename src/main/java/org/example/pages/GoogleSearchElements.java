@@ -22,10 +22,6 @@ public class GoogleSearchElements extends PageObject {
     @FindBy(xpath = "//div[normalize-space()='Accept all']")
     WebElementFacade acceptCookies_button;
 
-    public WebElementFacade findAnyElementWithText(String text) {
-        return find(org.openqa.selenium.By.xpath("//*[contains(normalize-space(),'"+text+"')]"));
-    }
-
     public void click_search() {
         if (search_button.isClickable()) {
             search_button.click();
@@ -51,9 +47,5 @@ public class GoogleSearchElements extends PageObject {
         }
 
         cookiesTitle_modal.shouldNotBeVisible();
-    }
-
-    public void check_result(String result){
-        findAnyElementWithText(result).isDisplayed();
     }
 }
