@@ -22,28 +22,26 @@ public class GoogleSearchElements extends PageObject {
     @FindBy(xpath = "//div[normalize-space()='Accept all']")
     WebElementFacade acceptCookies_button;
 
-    public GoogleSearchElements changeToNewTab(){
-        return this;
+    public WebElementFacade findAnyElementWithText(String text) {
+        return find(org.openqa.selenium.By.xpath("//*[contains(normalize-space(),'"+text+"')]"));
     }
 
-    public GoogleSearchElements click_search() {
+    public void click_search() {
         if (search_button.isClickable()) {
             search_button.click();
         }
-        return this;
     }
 
-    public GoogleSearchElements fill_search_input(String searchText) throws InterruptedException {
+    public void fill_search_input(String searchText) {
         if(!searchText.equals("")) {
             if (search_input.isDisplayed()) {
                 search_input.clear();
                 search_input.sendKeys(searchText);
             }
         }
-        return this;
     }
 
-    public GoogleSearchElements check_search_page_opened() {
+    public void check_search_page_opened() {
         if (google_logo.isDisplayed()) {
             google_logo.waitUntilVisible();
         }
@@ -53,7 +51,9 @@ public class GoogleSearchElements extends PageObject {
         }
 
         cookiesTitle_modal.shouldNotBeVisible();
+    }
 
-        return this;
+    public void check_result(String result){
+        findAnyElementWithText(result).isDisplayed();
     }
 }

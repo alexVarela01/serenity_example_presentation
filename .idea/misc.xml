@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="org.example.pages.GoogleSearchElements acceptCookies_button" />
+      <entry_point TYPE="field" FQNAME="org.example.pages.GoogleSearchElements cookiesTitle_modal" />
+      <entry_point TYPE="field" FQNAME="org.example.pages.GoogleSearchElements google_logo" />
+      <entry_point TYPE="field" FQNAME="org.example.scenarios.steps.GoogleSteps googleSearchElements" />
+      <entry_point TYPE="field" FQNAME="org.example.scenarios.GoogleStepsDefinition googleSteps" />
+      <entry_point TYPE="field" FQNAME="org.example.pages.GoogleSearchElements search_button" />
+      <entry_point TYPE="field" FQNAME="org.example.pages.GoogleSearchElements search_input" />
+    </entry_points>
+    <pattern value="org.example.config.BeforeWebDriver" />
+    <pattern value="org.example.scenarios.GoogleStepsDefinition" method="check_search_page_opened" />
+    <pattern value="org.example.CucumberFeaturesTest" />
+    <pattern value="org.example.pages.GoogleSearchElements" />
+    <pattern value="org.example.scenarios.steps.GoogleSteps" />
+    <pattern value="org.example.scenarios.GoogleStepsDefinition" />
+    <pattern value="org.example.Main" />
+    <pattern value="org.example.Main" method="main" />
+    <pattern value="org.example.scenarios.GoogleStepsDefinition" method="navigate_google" />
+    <pattern value="org.example.scenarios.GoogleStepsDefinition" method="perform_search" />
+    <pattern value="org.example.scenarios.steps.GoogleSteps" method="check_search_page_opened" />
+    <pattern value="org.example.scenarios.steps.GoogleSteps" method="navigate_google" />
+    <pattern value="org.example.scenarios.steps.GoogleSteps" method="perform_search" />
+    <pattern value="org.example.pages.GoogleSearchElements" method="check_search_page_opened" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">

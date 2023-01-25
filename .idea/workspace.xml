@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1609e0ca-19c2-4cbf-af55-3a909dae7305" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1609e0ca-19c2-4cbf-af55-3a909dae7305" name="Changes" comment="Fixed some warnings">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/BeforeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/BeforeWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/LocatorsLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/WebAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/GoogleSearchElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/GoogleSearchElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/scenarios/GoogleStepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/scenarios/GoogleStepsDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/scenarios/steps/GoogleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/scenarios/steps/GoogleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SearchRequirements.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SearchRequirements.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +58,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -61,6 +74,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.scenarios.steps" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -fpom.xml clean verify serenity:aggregate -Dtags=@SearchFeature" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="CucumberFeaturesTest" type="JUnit" factoryName="JUnit">
@@ -90,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674677411679</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit 2">
+      <created>1674677525106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674677525106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Initial commit 2" />
+    <MESSAGE value="Fixed some warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some warnings" />
   </component>
 </project>
