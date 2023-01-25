@@ -5,7 +5,7 @@ import net.thucydides.core.annotations.Step;
 import org.example.pages.GoogleSearchResultsElements;
 
 @Slf4j
-public class GoogleResultsSteps {
+public class GoogleSearchResultsSteps {
 
     private GoogleSearchResultsElements googleSearchResultsElements;
 

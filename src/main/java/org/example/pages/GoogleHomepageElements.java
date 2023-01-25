@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.pages.PageObject;
 
 
-public class GoogleSearchElements extends PageObject {
+public class GoogleHomepageElements extends PageObject {
 
     @FindBy(xpath = "//input[@title='Search']")
     WebElementFacade search_input;

@@ -6,12 +6,6 @@ import net.thucydides.core.util.EnvironmentVariables;
 import net.thucydides.core.webdriver.SupportedWebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-/**
- * Class to add epo proxy configuration to remote web driver.
- *
- * @author SG93017
- *
- */
 public class BeforeWebDriver implements BeforeAWebdriverScenario {
     @Override
     public DesiredCapabilities apply(EnvironmentVariables environmentVariables, SupportedWebDriver supportedWebDriver, TestOutcome testOutcome, DesiredCapabilities desiredCapabilities) {
