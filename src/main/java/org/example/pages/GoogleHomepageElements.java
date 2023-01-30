@@ -13,9 +13,6 @@ public class GoogleHomepageElements extends PageObject {
     @FindBy(xpath = "(//input[@name='btnK'])[1]")
     WebElementFacade search_button;
 
-    @FindBy(xpath = "//img[@id='hplogo']")
-    WebElementFacade google_logo;
-
     @FindBy(xpath = "//h1[normalize-space()='Before you continue to Google']")
     WebElementFacade cookiesTitle_modal;
 
@@ -38,8 +35,8 @@ public class GoogleHomepageElements extends PageObject {
     }
 
     public void check_search_page_opened() {
-        if (google_logo.isDisplayed()) {
-            google_logo.waitUntilVisible();
+        if (search_input.isDisplayed()) {
+            search_input.waitUntilVisible();
         }
 
         if (cookiesTitle_modal.isDisplayed()){

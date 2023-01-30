@@ -10,7 +10,7 @@ public class GoogleSearchResultsSteps {
     private GoogleSearchResultsElements googleSearchResultsElements;
 
     @Step("^the user should see \"([^\"]*)\" as the search result$")
-    public void check_result(String value) {
+    public void check_result(String value) throws InterruptedException {
         googleSearchResultsElements.check_result(value);
     }
 }

@@ -10,7 +10,8 @@ public class GoogleSearchResultsElements extends PageObject {
         return find(org.openqa.selenium.By.xpath("//*[contains(normalize-space(),'"+text+"')]"));
     }
 
-    public void check_result(String result){
+    public void check_result(String result) throws InterruptedException {
         findAnyElementWithText(result).isDisplayed();
+        Thread.sleep(1000);
     }
 }

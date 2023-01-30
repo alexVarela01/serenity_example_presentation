@@ -12,7 +12,7 @@ public class GoogleSearchResultsStepsDefinition {
     protected static GoogleSearchResultsSteps googleSearchResultsSteps;
 
     @Then("^the user should see \"([^\"]*)\" as the search result$")
-    public void check_result(String value) {
+    public void check_result(String value) throws InterruptedException {
         googleSearchResultsSteps.check_result(value);
     }
 }
