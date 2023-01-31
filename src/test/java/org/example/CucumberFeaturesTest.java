@@ -10,7 +10,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
         plugin = {"pretty","rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         monochrome = true,
-        tags = "@SearchFeature"
+        tags = "@TestID-2"
 )
 public class CucumberFeaturesTest {}
 
